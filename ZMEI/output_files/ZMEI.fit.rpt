@@ -1,5 +1,5 @@
 Fitter report for ZMEI
-Fri Dec 25 23:54:19 2020
+Sat Dec 26 02:12:53 2020
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -66,18 +66,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 25 23:54:19 2020       ;
+; Fitter Status                      ; Successful - Sat Dec 26 02:12:53 2020       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; ZMEI                                        ;
 ; Top-level Entity Name              ; ZMEI                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 94 / 6,272 ( 1 % )                          ;
-;     Total combinational functions  ; 94 / 6,272 ( 1 % )                          ;
-;     Dedicated logic registers      ; 36 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 36                                          ;
-; Total pins                         ; 6 / 92 ( 7 % )                              ;
+; Total logic elements               ; 80 / 6,272 ( 1 % )                          ;
+;     Total combinational functions  ; 72 / 6,272 ( 1 % )                          ;
+;     Dedicated logic registers      ; 37 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 37                                          ;
+; Total pins                         ; 7 / 92 ( 8 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -181,8 +181,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 154 ) ; 0.00 % ( 0 / 154 )         ; 0.00 % ( 0 / 154 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 154 ) ; 0.00 % ( 0 / 154 )         ; 0.00 % ( 0 / 154 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 135 ) ; 0.00 % ( 0 / 135 )         ; 0.00 % ( 0 / 135 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 135 ) ; 0.00 % ( 0 / 135 )         ; 0.00 % ( 0 / 135 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -205,7 +205,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 144 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 125 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -221,29 +221,29 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 94 / 6,272 ( 1 % )   ;
-;     -- Combinational with no register       ; 58                   ;
-;     -- Register only                        ; 0                    ;
-;     -- Combinational with a register        ; 36                   ;
+; Total logic elements                        ; 80 / 6,272 ( 1 % )   ;
+;     -- Combinational with no register       ; 43                   ;
+;     -- Register only                        ; 8                    ;
+;     -- Combinational with a register        ; 29                   ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 51                   ;
-;     -- 3 input functions                    ; 11                   ;
-;     -- <=2 input functions                  ; 32                   ;
-;     -- Register only                        ; 0                    ;
+;     -- 4 input functions                    ; 31                   ;
+;     -- 3 input functions                    ; 3                    ;
+;     -- <=2 input functions                  ; 38                   ;
+;     -- Register only                        ; 8                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 64                   ;
-;     -- arithmetic mode                      ; 30                   ;
+;     -- normal mode                          ; 41                   ;
+;     -- arithmetic mode                      ; 31                   ;
 ;                                             ;                      ;
-; Total registers*                            ; 36 / 6,684 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 36 / 6,272 ( < 1 % ) ;
+; Total registers*                            ; 37 / 6,684 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 37 / 6,272 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 412 ( 0 % )      ;
 ;                                             ;                      ;
-; Total LABs:  partially or completely used   ; 7 / 392 ( 2 % )      ;
+; Total LABs:  partially or completely used   ; 5 / 392 ( 1 % )      ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 6 / 92 ( 7 % )       ;
-;     -- Clock pins                           ; 2 / 3 ( 67 % )       ;
+; I/O pins                                    ; 7 / 92 ( 8 % )       ;
+;     -- Clock pins                           ; 3 / 3 ( 100 % )      ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )        ;
 ;                                             ;                      ;
 ; Global signals                              ; 1                    ;
@@ -258,12 +258,12 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
-; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.2%   ;
-; Peak interconnect usage (total/H/V)         ; 0.9% / 0.8% / 1.0%   ;
-; Maximum fan-out                             ; 36                   ;
-; Highest non-global fan-out                  ; 35                   ;
-; Total fan-out                               ; 392                  ;
-; Average fan-out                             ; 2.56                 ;
+; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.3%   ;
+; Peak interconnect usage (total/H/V)         ; 1.1% / 1.0% / 1.3%   ;
+; Maximum fan-out                             ; 37                   ;
+; Highest non-global fan-out                  ; 32                   ;
+; Total fan-out                               ; 335                  ;
+; Average fan-out                             ; 2.50                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -276,29 +276,29 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 94 / 6272 ( 1 % )   ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 58                  ; 0                              ;
-;     -- Register only                        ; 0                   ; 0                              ;
-;     -- Combinational with a register        ; 36                  ; 0                              ;
+; Total logic elements                        ; 80 / 6272 ( 1 % )   ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 43                  ; 0                              ;
+;     -- Register only                        ; 8                   ; 0                              ;
+;     -- Combinational with a register        ; 29                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 51                  ; 0                              ;
-;     -- 3 input functions                    ; 11                  ; 0                              ;
-;     -- <=2 input functions                  ; 32                  ; 0                              ;
-;     -- Register only                        ; 0                   ; 0                              ;
+;     -- 4 input functions                    ; 31                  ; 0                              ;
+;     -- 3 input functions                    ; 3                   ; 0                              ;
+;     -- <=2 input functions                  ; 38                  ; 0                              ;
+;     -- Register only                        ; 8                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 64                  ; 0                              ;
-;     -- arithmetic mode                      ; 30                  ; 0                              ;
+;     -- normal mode                          ; 41                  ; 0                              ;
+;     -- arithmetic mode                      ; 31                  ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total registers                             ; 36                  ; 0                              ;
-;     -- Dedicated logic registers            ; 36 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+; Total registers                             ; 37                  ; 0                              ;
+;     -- Dedicated logic registers            ; 37 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 392 ( 2 % )     ; 0 / 392 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 5 / 392 ( 1 % )     ; 0 / 392 ( 0 % )                ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 6                   ; 0                              ;
+; I/O pins                                    ; 7                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 30 ( 0 % )      ; 0 / 30 ( 0 % )                 ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
@@ -311,15 +311,15 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 387                 ; 5                              ;
-;     -- Registered Connections               ; 102                 ; 0                              ;
+;     -- Total Connections                    ; 330                 ; 5                              ;
+;     -- Registered Connections               ; 110                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
-;     -- Input Ports                          ; 2                   ; 0                              ;
+;     -- Input Ports                          ; 3                   ; 0                              ;
 ;     -- Output Ports                         ; 4                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
@@ -344,8 +344,9 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk   ; 23    ; 1        ; 0            ; 11           ; 7            ; 36                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; reset ; 25    ; 2        ; 0            ; 11           ; 21           ; 35                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; btn1  ; 88    ; 5        ; 34           ; 12           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clk   ; 23    ; 1        ; 0            ; 11           ; 7            ; 37                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; reset ; 25    ; 2        ; 0            ; 11           ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -393,7 +394,7 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 ; 2        ; 1 / 8 ( 13 % )  ; 2.5V          ; --           ;
 ; 3        ; 0 / 11 ( 0 % )  ; 2.5V          ; --           ;
 ; 4        ; 0 / 14 ( 0 % )  ; 2.5V          ; --           ;
-; 5        ; 4 / 13 ( 31 % ) ; 2.5V          ; --           ;
+; 5        ; 5 / 13 ( 38 % ) ; 2.5V          ; --           ;
 ; 6        ; 1 / 10 ( 10 % ) ; 2.5V          ; --           ;
 ; 7        ; 0 / 13 ( 0 % )  ; 2.5V          ; --           ;
 ; 8        ; 0 / 12 ( 0 % )  ; 2.5V          ; --           ;
@@ -492,7 +493,7 @@ The pin-out file can be found in C:/Users/smellnefty/Program/Quartus Prime/ZMEI/
 ; 85       ; 119        ; 5        ; led[1]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 86       ; 120        ; 5        ; led[2]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 87       ; 121        ; 5        ; led[3]                                                    ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 88       ; 125        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 88       ; 125        ; 5        ; btn1                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 89       ; 126        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 90       ; 127        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 91       ; 128        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -560,7 +561,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |ZMEI                      ; 94 (94)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 58 (58)      ; 0 (0)             ; 36 (36)          ; |ZMEI               ; work         ;
+; |ZMEI                      ; 80 (80)     ; 37 (37)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 7    ; 0            ; 43 (43)      ; 8 (8)             ; 29 (29)          ; |ZMEI               ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -576,6 +577,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; reset  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; clk    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; btn1   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -586,17 +588,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; reset               ;                   ;         ;
 ; clk                 ;                   ;         ;
+; btn1                ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                  ;
-+-------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name  ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk   ; PIN_23           ; 36      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; led~5 ; LCCOMB_X7_Y8_N30 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+-------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                             ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name           ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk            ; PIN_23             ; 37      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; counter[16]~80 ; LCCOMB_X30_Y10_N0  ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; led[3]~11      ; LCCOMB_X30_Y10_N26 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++----------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -604,7 +608,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_23   ; 36      ; 5                                    ; Global Clock         ; GCLK2            ; --                        ;
+; clk  ; PIN_23   ; 37      ; 21                                   ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -613,23 +617,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 116 / 32,401 ( < 1 % ) ;
-; C16 interconnects     ; 1 / 1,326 ( < 1 % )    ;
-; C4 interconnects      ; 49 / 21,816 ( < 1 % )  ;
-; Direct links          ; 42 / 32,401 ( < 1 % )  ;
+; Block interconnects   ; 107 / 32,401 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 1,326 ( 0 % )      ;
+; C4 interconnects      ; 61 / 21,816 ( < 1 % )  ;
+; Direct links          ; 19 / 32,401 ( < 1 % )  ;
 ; Global clocks         ; 1 / 10 ( 10 % )        ;
-; Local interconnects   ; 48 / 10,320 ( < 1 % )  ;
-; R24 interconnects     ; 6 / 1,289 ( < 1 % )    ;
-; R4 interconnects      ; 35 / 28,186 ( < 1 % )  ;
+; Local interconnects   ; 52 / 10,320 ( < 1 % )  ;
+; R24 interconnects     ; 3 / 1,289 ( < 1 % )    ;
+; R4 interconnects      ; 54 / 28,186 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.43) ; Number of LABs  (Total = 7) ;
+; Number of Logic Elements  (Average = 16.00) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -642,28 +646,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 1                           ;
-; 16                                          ; 4                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 5                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.71) ; Number of LABs  (Total = 7) ;
+; LAB-wide Signals  (Average = 1.80) ; Number of LABs  (Total = 5) ;
 +------------------------------------+-----------------------------+
 ; 1 Clock                            ; 5                           ;
+; 1 Sync. clear                      ; 4                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 18.57) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced  (Average = 21.80) ; Number of LABs  (Total = 5) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
-; 1                                            ; 1                           ;
+; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
@@ -678,27 +683,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 1                           ;
+; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
 ; 20                                           ; 1                           ;
-; 21                                           ; 0                           ;
+; 21                                           ; 1                           ;
 ; 22                                           ; 0                           ;
-; 23                                           ; 1                           ;
-; 24                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 1                           ;
 ; 25                                           ; 0                           ;
-; 26                                           ; 2                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +--------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 11.57) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced Out  (Average = 12.60) ; Number of LABs  (Total = 5) ;
 +--------------------------------------------------+-----------------------------+
 ; 0                                                ; 0                           ;
-; 1                                                ; 1                           ;
+; 1                                                ; 0                           ;
 ; 2                                                ; 0                           ;
 ; 3                                                ; 0                           ;
 ; 4                                                ; 0                           ;
@@ -706,44 +712,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6                                                ; 1                           ;
 ; 7                                                ; 0                           ;
 ; 8                                                ; 0                           ;
-; 9                                                ; 0                           ;
+; 9                                                ; 1                           ;
 ; 10                                               ; 0                           ;
 ; 11                                               ; 0                           ;
 ; 12                                               ; 0                           ;
-; 13                                               ; 2                           ;
+; 13                                               ; 0                           ;
 ; 14                                               ; 0                           ;
-; 15                                               ; 1                           ;
-; 16                                               ; 1                           ;
-; 17                                               ; 1                           ;
+; 15                                               ; 0                           ;
+; 16                                               ; 3                           ;
 +--------------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 15.14) ; Number of LABs  (Total = 7) ;
+; Number of Distinct Inputs  (Average = 19.00) ; Number of LABs  (Total = 5) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
-; 4                                            ; 1                           ;
+; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
+; 7                                            ; 1                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
+; 11                                           ; 1                           ;
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
-; 14                                           ; 1                           ;
-; 15                                           ; 1                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
-; 17                                           ; 2                           ;
+; 17                                           ; 1                           ;
 ; 18                                           ; 0                           ;
-; 19                                           ; 1                           ;
-; 20                                           ; 1                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 0                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 1                           ;
+; 27                                           ; 0                           ;
+; 28                                           ; 0                           ;
+; 29                                           ; 0                           ;
+; 30                                           ; 0                           ;
+; 31                                           ; 0                           ;
+; 32                                           ; 0                           ;
+; 33                                           ; 0                           ;
+; 34                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -804,9 +823,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 6         ; 0            ; 6         ; 0            ; 0            ; 6         ; 6         ; 0            ; 6         ; 6         ; 0            ; 4            ; 0            ; 0            ; 2            ; 0            ; 4            ; 2            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 6         ; 0            ; 0            ;
+; Total Pass         ; 7         ; 0            ; 7         ; 0            ; 0            ; 7         ; 7         ; 0            ; 7         ; 7         ; 0            ; 4            ; 0            ; 0            ; 3            ; 0            ; 4            ; 3            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 7         ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 6            ; 0         ; 6            ; 6            ; 0         ; 0         ; 6            ; 0         ; 0         ; 6            ; 2            ; 6            ; 6            ; 4            ; 6            ; 2            ; 4            ; 6            ; 6            ; 6            ; 2            ; 6            ; 6            ; 6            ; 6            ; 6            ; 0         ; 6            ; 6            ;
+; Total Inapplicable ; 0         ; 7            ; 0         ; 7            ; 7            ; 0         ; 0         ; 7            ; 0         ; 0         ; 7            ; 3            ; 7            ; 7            ; 4            ; 7            ; 3            ; 4            ; 7            ; 7            ; 7            ; 3            ; 7            ; 7            ; 7            ; 7            ; 7            ; 0         ; 7            ; 7            ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; led[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; led[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -814,6 +833,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; btn1               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -892,10 +912,10 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X23_Y0 to location X34_Y11
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -904,8 +924,8 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/smellnefty/Program/Quartus Prime/ZMEI/output_files/ZMEI.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5459 megabytes
-    Info: Processing ended: Fri Dec 25 23:54:20 2020
+    Info: Peak virtual memory: 5457 megabytes
+    Info: Processing ended: Sat Dec 26 02:12:54 2020
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:16
 

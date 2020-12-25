@@ -26,6 +26,10 @@
 				{
 					"name" : "clk",
 					"strict" : false
+				},
+				{
+					"name" : "btn1",
+					"strict" : false
 				}
 			]
 		}
