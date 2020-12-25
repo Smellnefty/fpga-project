@@ -157,7 +157,7 @@ led[1]                       : 85        : output : 2.5 V             :         
 led[2]                       : 86        : output : 2.5 V             :         : 5         : Y              
 led[3]                       : 87        : output : 2.5 V             :         : 5         : Y              
 btn1                         : 88        : input  : 2.5 V             :         : 5         : Y              
-GND+                         : 89        :        :                   :         : 5         :                
+btn2                         : 89        : input  : 2.5 V             :         : 5         : Y              
 GND+                         : 90        :        :                   :         : 6         :                
 GND+                         : 91        :        :                   :         : 6         :                
 CONF_DONE                    : 92        :        :                   :         : 6         :                

@@ -30,6 +30,10 @@
 				{
 					"name" : "btn1",
 					"strict" : false
+				},
+				{
+					"name" : "btn2",
+					"strict" : false
 				}
 			]
 		}
