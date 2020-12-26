@@ -1,5 +1,5 @@
 Flow report for ZMEI
-Sat Dec 26 02:47:09 2020
+Sat Dec 26 03:20:30 2020
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 26 02:46:52 2020       ;
+; Flow Status                        ; Successful - Sat Dec 26 03:20:13 2020       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; ZMEI                                        ;
 ; Top-level Entity Name              ; ZMEI                                        ;
@@ -50,8 +50,8 @@ agreement for further details.
 ; Timing Models                      ; Final                                       ;
 ; Total logic elements               ; 135 / 6,272 ( 2 % )                         ;
 ;     Total combinational functions  ; 135 / 6,272 ( 2 % )                         ;
-;     Dedicated logic registers      ; 43 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 43                                          ;
+;     Dedicated logic registers      ; 48 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 48                                          ;
 ; Total pins                         ; 8 / 92 ( 9 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/26/2020 02:45:55 ;
+; Start date & time ; 12/26/2020 03:19:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ZMEI                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 70520201918564.160893995519204 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 70520201918564.160894195614448 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                           ; --            ; --          ; --         ;
@@ -92,10 +92,10 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 4921 MB             ; 00:00:52                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 5451 MB             ; 00:00:16                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 4861 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4941 MB             ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 4923 MB             ; 00:00:53                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5458 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4863 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.3                     ; 4929 MB             ; 00:00:06                           ;
 ; Total                     ; 00:00:46     ; --                      ; --                  ; 00:01:19                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

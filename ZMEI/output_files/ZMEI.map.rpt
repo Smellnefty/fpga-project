@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ZMEI
-Sat Dec 26 02:46:15 2020
+Sat Dec 26 03:19:36 2020
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -14,13 +14,12 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -47,15 +46,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 26 02:46:15 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 26 03:19:36 2020       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; ZMEI                                        ;
 ; Top-level Entity Name              ; ZMEI                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 135                                         ;
+; Total logic elements               ; 138                                         ;
 ;     Total combinational functions  ; 135                                         ;
-;     Dedicated logic registers      ; 43                                          ;
-; Total registers                    ; 43                                          ;
+;     Dedicated logic registers      ; 48                                          ;
+; Total registers                    ; 48                                          ;
 ; Total pins                         ; 8                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -182,20 +181,20 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 135       ;
+; Estimated Total logic elements              ; 138       ;
 ;                                             ;           ;
 ; Total combinational functions               ; 135       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 72        ;
-;     -- 3 input functions                    ; 20        ;
-;     -- <=2 input functions                  ; 43        ;
+;     -- 4 input functions                    ; 79        ;
+;     -- 3 input functions                    ; 19        ;
+;     -- <=2 input functions                  ; 37        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 90        ;
-;     -- arithmetic mode                      ; 45        ;
+;     -- normal mode                          ; 104       ;
+;     -- arithmetic mode                      ; 31        ;
 ;                                             ;           ;
-; Total registers                             ; 43        ;
-;     -- Dedicated logic registers            ; 43        ;
+; Total registers                             ; 48        ;
+;     -- Dedicated logic registers            ; 48        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 8         ;
@@ -203,9 +202,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 37        ;
-; Total fan-out                               ; 559       ;
-; Average fan-out                             ; 2.88      ;
+; Maximum fan-out                             ; 48        ;
+; Total fan-out                               ; 631       ;
+; Average fan-out                             ; 3.17      ;
 +---------------------------------------------+-----------+
 
 
@@ -214,39 +213,53 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |ZMEI                      ; 135 (135)         ; 43 (43)      ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |ZMEI               ; work         ;
+; |ZMEI                      ; 135 (135)         ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |ZMEI               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; max_cnt[0..5,9,10]                     ; Stuck at GND due to stuck port data_in ;
-; max_cnt[13,14,20..22]                  ; Stuck at VCC due to stuck port data_in ;
-; max_cnt[27,28]                         ; Stuck at GND due to stuck port data_in ;
-; max_cnt[8]                             ; Merged with max_cnt[26]                ;
-; state[1..9,11..31]                     ; Merged with state[10]                  ;
-; max_cnt[7,25]                          ; Merged with max_cnt[17]                ;
-; max_cnt[18,24]                         ; Merged with max_cnt[16]                ;
-; max_cnt[23]                            ; Merged with max_cnt[15]                ;
-; max_cnt[19]                            ; Merged with max_cnt[12]                ;
-; max_cnt[6]                             ; Merged with max_cnt[11]                ;
-; state[10]                              ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 54 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                        ;
-+---------------+---------------------------+----------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------+---------------------------+----------------------------------------+
-; max_cnt[0]    ; Stuck at GND              ; state[10]                              ;
-;               ; due to stuck port data_in ;                                        ;
-+---------------+---------------------------+----------------------------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; max_cnt3[0]                             ; Stuck at GND due to stuck port data_in ;
+; max_cnt4[29..31]                        ; Stuck at GND due to stuck port data_in ;
+; max_cnt4[15,16,21..24]                  ; Stuck at VCC due to stuck port data_in ;
+; max_cnt4[0..7,10..12]                   ; Stuck at GND due to stuck port data_in ;
+; max_cnt3[1..5,10,17,18]                 ; Stuck at GND due to stuck port data_in ;
+; max_cnt3[21,22]                         ; Stuck at VCC due to stuck port data_in ;
+; max_cnt3[25,28..31]                     ; Stuck at GND due to stuck port data_in ;
+; max_cnt2[0..6,9..11]                    ; Stuck at GND due to stuck port data_in ;
+; max_cnt2[14,15,20..23]                  ; Stuck at VCC due to stuck port data_in ;
+; max_cnt2[28..31]                        ; Stuck at GND due to stuck port data_in ;
+; max_cnt[0..5,8..10]                     ; Stuck at GND due to stuck port data_in ;
+; max_cnt[13,14,19..22]                   ; Stuck at VCC due to stuck port data_in ;
+; max_cnt[27..31]                         ; Stuck at GND due to stuck port data_in ;
+; max_cnt3[9,16,24]                       ; Merged with max_cnt2[27]               ;
+; max_cnt4[28]                            ; Merged with max_cnt2[27]               ;
+; max_cnt[26]                             ; Merged with max_cnt2[27]               ;
+; max_cnt2[18,24,26]                      ; Merged with max_cnt2[16]               ;
+; max_cnt3[8,15,23]                       ; Merged with max_cnt2[16]               ;
+; max_cnt4[17,19,25,27]                   ; Merged with max_cnt2[16]               ;
+; max_cnt[15,17,23,25]                    ; Merged with max_cnt2[16]               ;
+; state[2..9,11..31]                      ; Merged with state[10]                  ;
+; prev_state[2..9,11..31]                 ; Merged with prev_state[10]             ;
+; max_cnt3[7,14,20]                       ; Merged with max_cnt2[13]               ;
+; max_cnt4[14]                            ; Merged with max_cnt2[13]               ;
+; max_cnt[12]                             ; Merged with max_cnt2[13]               ;
+; max_cnt2[7]                             ; Merged with max_cnt2[12]               ;
+; max_cnt3[6,11,13,19,26]                 ; Merged with max_cnt2[12]               ;
+; max_cnt4[8,13]                          ; Merged with max_cnt2[12]               ;
+; max_cnt[6,11]                           ; Merged with max_cnt2[12]               ;
+; max_cnt2[19,25]                         ; Merged with max_cnt2[17]               ;
+; max_cnt4[18,20,26]                      ; Merged with max_cnt2[17]               ;
+; max_cnt[16,18,24]                       ; Merged with max_cnt2[17]               ;
+; max_cnt3[12,27]                         ; Merged with max_cnt2[8]                ;
+; max_cnt4[9]                             ; Merged with max_cnt2[8]                ;
+; max_cnt[7]                              ; Merged with max_cnt2[8]                ;
+; Total Number of Removed Registers = 180 ;                                        ;
++-----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -254,12 +267,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 43    ;
+; Total registers                              ; 48    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 45    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -269,9 +282,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; max_cnt[17]                            ; 19      ;
-; max_cnt[12]                            ; 14      ;
-; max_cnt[15]                            ; 11      ;
+; max_cnt2[16]                           ; 13      ;
+; max_cnt2[13]                           ; 9       ;
+; max_cnt2[8]                            ; 9       ;
 ; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
@@ -281,9 +294,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |ZMEI|counter[8]           ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; Yes        ; |ZMEI|led[1]~reg0          ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |ZMEI|led[3]~reg0          ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |ZMEI|counter[25]          ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; Yes        ; |ZMEI|state[1]             ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |ZMEI|led[1]~reg0          ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; Yes        ; |ZMEI|led[0]~reg0          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -293,23 +307,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 8                           ;
-; cycloneiii_ff         ; 43                          ;
-;     ENA               ; 4                           ;
-;     SCLR              ; 32                          ;
-;     plain             ; 7                           ;
+; cycloneiii_ff         ; 48                          ;
+;     ENA               ; 13                          ;
+;     ENA SCLR          ; 32                          ;
+;     plain             ; 3                           ;
 ; cycloneiii_lcell_comb ; 135                         ;
-;     arith             ; 45                          ;
-;         2 data inputs ; 35                          ;
-;         3 data inputs ; 10                          ;
-;     normal            ; 90                          ;
-;         0 data inputs ; 4                           ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 104                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 72                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 79                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.90                        ;
+; Max LUT depth         ; 11.00                       ;
+; Average LUT depth     ; 6.56                        ;
 +-----------------------+-----------------------------+
 
 
@@ -328,23 +340,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Sat Dec 26 02:45:52 2020
+    Info: Processing started: Sat Dec 26 03:19:13 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ZMEI -c ZMEI
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file zmei.sv
-    Info (12023): Found entity 1: ZMEI File: C:/Users/smellnefty/Program/Quartus Prime/ZMEI/ZMEI.sv Line: 8
+    Info (12023): Found entity 1: ZMEI File: C:/Users/smellnefty/Program/Quartus Prime/ZMEI/ZMEI.sv Line: 17
 Info (12127): Elaborating entity "ZMEI" for the top level hierarchy
+Warning (10762): Verilog HDL Case Statement warning at ZMEI.sv(58): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/smellnefty/Program/Quartus Prime/ZMEI/ZMEI.sv Line: 58
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 135 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4927 megabytes
-    Info: Processing ended: Sat Dec 26 02:46:15 2020
+    Info (21061): Implemented 138 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Sat Dec 26 03:19:36 2020
     Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Total CPU time (on all processors): 00:00:53
 
 
