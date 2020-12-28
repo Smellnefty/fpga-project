@@ -1,0 +1,15 @@
+C:/Users/smellnefty/Program/QuestaSim/QSTEST/TEST.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/smellnefty/Program/QuestaSim/QSTEST/TEST.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module TEST
+
+Top level modules:
+	TEST
+
+} {} {}} C:/Users/smellnefty/Program/QuestaSim/QSTEST/QSTEST.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/smellnefty/Program/QuestaSim/QSTEST/QSTEST.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module QSTEST
+
+Top level modules:
+	QSTEST
+
+} {} {}}
